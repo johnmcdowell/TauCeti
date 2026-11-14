@@ -22,9 +22,9 @@ invertible nearby, and `deg r = deg s + n`. For `n = 0` this recovers the struct
 The construction is adapted from Mathlib's
 `Mathlib/AlgebraicGeometry/ProjectiveSpectrum/StructureSheaf.lean` (Jujian Zhang), which builds the
 structure sheaf `AlgebraicGeometry.Proj.structureSheaf` through the same sequence `IsFraction`,
-`isFractionPrelocal`, `isLocallyFraction`, a presheaf of abelian groups and its comparison with
-the sheaf of types. The passage to a presheaf of modules via `PresheafOfModules.ofPresheaf`
-follows `AlgebraicGeometry.StructureSheaf.moduleStructurePresheaf` in Mathlib's
+`isFractionPrelocal`, `isLocallyFraction` and `subsheafToTypes`. The passage to a presheaf of
+modules via `PresheafOfModules.ofPresheaf` follows
+`AlgebraicGeometry.StructureSheaf.moduleStructurePresheaf` in Mathlib's
 `Mathlib/AlgebraicGeometry/StructureSheaf.lean` (Johan Commelin, Kim Morrison, Andrew Yang).
 
 The fractions `r / s` form sections `AlgebraicGeometry.Proj.twistingSheaf.const`, and the
